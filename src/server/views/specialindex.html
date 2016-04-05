@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>mycph</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="/build/styles/base.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="/build/js/mycph.js"></script>
+	</head>
+
+	<body>
+<div id=”container”>
+
+<h>CHP Map </h>
+<p>testing page load </p>
+<!-- map -->
+<div id=”content”>
+	<div id="mycph">Loading...</div>
+	<p>
+	<script>
+		mycph.init(document.getElementById("mycph"));
+		mycph.run();
+	</script>
+	</p>
+</div>
+
+<!-- frame -->
+<div id=”navigation”>
+
+<form id="tagsearch">
+		<p>
+			<label for="tag">Hashtag:</label>
+			<input type="text" id="tag" name="tag" placeholder="unicorn" required pattern="[a-zA-Z0-9]+" />
+			<input type="submit" value="Search" />
+		 </p>
+	</form>
+
+<div id="target"></div>
+
+</div>
+
+<div id=”footer”>
+<p>testing page load </p>
+</div>
+
+</div> <!—container-->
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
